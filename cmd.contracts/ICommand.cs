@@ -1,7 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using cmd.Internals.Formating;
+using cmd.contracts.Help;
 
 namespace cmd.contracts
 {
@@ -9,6 +9,10 @@ namespace cmd.contracts
     {
         public abstract bool Interact(ref DirectoryInfo path, Command command);
         public abstract bool Accept(Command command);
+        public virtual HelpBuilder Help
+        {
+            get { return HelpBuilder.Empty; }
+        }
 
         public List<ICommand> Commands { get; set; }
 

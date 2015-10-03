@@ -3,12 +3,27 @@ using System.IO;
 using System.Net;
 using System.Xaml;
 using cmd.contracts;
+using cmd.contracts.Help;
 
 namespace cmd.Modules
 {
     public class AptGetCommand : ICommand
     {
         private RepositoryDatabase db = new RepositoryDatabase();
+
+        public override HelpBuilder Help
+        {
+            get
+            {
+                var b = new HelpBuilder();
+
+                b.Add("apt-get", "Package Manager",
+                    "apt-get install <packagename>\rapt-get update\rapt-get remove <packagename>" +
+                    "\rapt-get add-repository <uri>\rapt-get remove-repository <uri>");
+
+                return b;
+            }
+        }
 
         public override bool Accept(Command command)
         {

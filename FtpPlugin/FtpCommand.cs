@@ -14,14 +14,14 @@ namespace FtpPlugin
         {
             switch (command.Name)
             {
-                case "ftpconnect":
+                case "connect":
                     client.Host = command.Arguments[0];
                     client.Credentials = new System.Net.NetworkCredential(command.Arguments[1], command.Arguments[2]);
 
                     client.Connect();
 
                     break;
-                case "ftpls":
+                case "ls":
                     var ls = client.GetListing();
                     var t = new ConsoleTable();
 
@@ -33,10 +33,10 @@ namespace FtpPlugin
                     t.PrintLine();
 
                     break;
-                case "ftpexec":
+                case "exec":
                     client.Execute(command.Arguments[0]);
                     break;
-                case "ftpdownload":
+                case "download":
                     MemoryStream s = null;
                     Stream ss = null;
 
@@ -69,7 +69,7 @@ namespace FtpPlugin
 
         public override bool Accept(Command command)
         {
-            return Regex.IsMatch("ftpconnect|ftpls|ftpexec|ftpdownload", command.Name);
+            return Regex.IsMatch("ftp", command.Name);
         }
     }
 }

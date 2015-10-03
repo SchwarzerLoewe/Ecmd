@@ -1,0 +1,10 @@
+C:\Users\filmee24\Documents\GitHub\Ecmd\cmd\bin\Debug\ecmd.exe.config
+C:\Users\filmee24\Documents\GitHub\Ecmd\cmd\bin\Debug\ecmd.exe
+C:\Users\filmee24\Documents\GitHub\Ecmd\cmd\bin\Debug\ecmd.pdb
+C:\Users\filmee24\Documents\GitHub\Ecmd\cmd\bin\Debug\ecmd.contracts.dll
+C:\Users\filmee24\Documents\GitHub\Ecmd\cmd\bin\Debug\ecmd.contracts.pdb
+C:\Users\filmee24\Documents\GitHub\Ecmd\cmd\obj\Debug\ecmd.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\Documents\GitHub\Ecmd\cmd\obj\Debug\cmd.Properties.Resources.resources
+C:\Users\filmee24\Documents\GitHub\Ecmd\cmd\obj\Debug\ecmd.csproj.GenerateResource.Cache
+C:\Users\filmee24\Documents\GitHub\Ecmd\cmd\obj\Debug\ecmd.exe
+C:\Users\filmee24\Documents\GitHub\Ecmd\cmd\obj\Debug\ecmd.pdb

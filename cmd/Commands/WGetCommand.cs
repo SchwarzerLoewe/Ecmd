@@ -1,7 +1,6 @@
 ﻿using System;
 using System.IO;
 using System.Net;
-using System.Threading;
 using cmd.contracts;
 
 namespace cmd.Modules
@@ -16,7 +15,7 @@ namespace cmd.Modules
         public override bool Interact(ref DirectoryInfo path, Command c)
         {
             var wc = new WebClient();
-            var prog = new cmd.contracts.Progress.SwayBar();
+            var prog = new contracts.Progress.SwayBar();
             bool returns = false;
 
             wc.DownloadProgressChanged += (s, e) => { prog.Step(); };
@@ -31,6 +30,5 @@ namespace cmd.Modules
 
             return returns;
         }
-
     }
 }

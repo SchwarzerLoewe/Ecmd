@@ -34,6 +34,7 @@ namespace cmd
             commands.Add(new WGetCommand());
             commands.Add(new AptGetCommand());
             commands.Add(new EchoCommand());
+            commands.Add(new HelpCommand());
 
             _plugInManager = new CmdPlugInManager();
             _plugInManager.PlugInFolder = Path.Combine(di.FullName, "Plugins");
@@ -65,7 +66,7 @@ namespace cmd
                     Console.Write(di.GetShortPathName() + "> ");
 
                     var cmd = Console.ReadLine();
-
+                    
                     VariableCache.Set("input", cmd);
 
                     foreach (var item in commands)

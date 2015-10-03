@@ -50,6 +50,8 @@
     <Compile Include="ConsoleTable.cs" />
     <Compile Include="ConsoleWindow.cs" />
     <Compile Include="API\ICmdApplication.cs" />
+    <Compile Include="Help\HelpBuilder.cs" />
+    <Compile Include="Help\HelpItem.cs" />
     <Compile Include="ICommand.cs" />
     <Compile Include="Internals\Formating\ConstantSet.cs" />
     <Compile Include="Internals\Formating\ConstantSetBase.cs" />

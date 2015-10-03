@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F0DF4F99-3BAA-420C-BF2E-E70356D99A53}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>cmd.contracts</RootNamespace>
+    <AssemblyName>ecmd.contracts</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Command.cs" />
+    <Compile Include="API\ICmdPlugIn.cs" />
+    <Compile Include="ConsoleTable.cs" />
+    <Compile Include="ConsoleWindow.cs" />
+    <Compile Include="API\ICmdApplication.cs" />
+    <Compile Include="ICommand.cs" />
+    <Compile Include="Internals\Formating\ConstantSet.cs" />
+    <Compile Include="Internals\Formating\ConstantSetBase.cs" />
+    <Compile Include="Internals\Formating\Format.cs" />
+    <Compile Include="Internals\Formating\FormatParameters.cs" />
+    <Compile Include="Internals\Formating\Formatter.cs" />
+    <Compile Include="Internals\Formating\IConstantSet.cs" />
+    <Compile Include="Internals\Formating\ITextAligner.cs" />
+    <Compile Include="Internals\Formating\ITextFormatter.cs" />
+    <Compile Include="Internals\Formating\IToken.cs" />
+    <Compile Include="Internals\Formating\ITokenizer.cs" />
+    <Compile Include="Internals\Formating\TextAlignerViaStringFormat.cs" />
+    <Compile Include="Internals\Formating\TextFormatterStandard.cs" />
+    <Compile Include="Internals\Formating\TokenizerViaRegex.cs" />
+    <Compile Include="Internals\Formating\TokenMatch.cs" />
+    <Compile Include="Menu.cs" />
+    <Compile Include="PathExtensions.cs" />
+    <Compile Include="Progress\AbstractBar.cs" />
+    <Compile Include="Progress\AnimatedBar.cs" />
+    <Compile Include="Progress\SwayBar.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SPS\ApplicationPlugIn.cs" />
+    <Compile Include="SPS\Helper.cs" />
+    <Compile Include="SPS\IApplicationPlugIn.cs" />
+    <Compile Include="SPS\IPluggable.cs" />
+    <Compile Include="SPS\IPlugIn.cs" />
+    <Compile Include="SPS\IPlugInApplication.cs" />
+    <Compile Include="SPS\IPlugInBasedApplication.cs" />
+    <Compile Include="SPS\LinkFinder.cs" />
+    <Compile Include="SPS\LinkItem.cs" />
+    <Compile Include="SPS\PlugIn.cs" />
+    <Compile Include="SPS\PlugInApplication.cs" />
+    <Compile Include="SPS\PlugInApplicationAttribute.cs" />
+    <Compile Include="SPS\PlugInAttribute.cs" />
+    <Compile Include="SPS\PlugInBasedApplication.cs" />
+    <Compile Include="SPS\Runnable\IRunnable.cs" />
+    <Compile Include="SPS\Runnable\IRunnablePlugIn.cs" />
+    <Compile Include="SPS\Runnable\RunnablePlugIn.cs" />
+    <Compile Include="SPS\Runnable\RunnablePlugInBasedApplication.cs" />
+    <Compile Include="Utilities.cs" />
+    <Compile Include="VariableCache.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

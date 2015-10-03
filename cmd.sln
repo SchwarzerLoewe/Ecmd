@@ -1,0 +1,93 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ecmd", "cmd\ecmd.csproj", "{D595073B-BDED-4091-B7F9-297616F90CAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ecmd.contracts", "cmd.contracts\ecmd.contracts.csproj", "{F0DF4F99-3BAA-420C-BF2E-E70356D99A53}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{132A0D0A-8188-4AF0-9EC2-3BD73B519647}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinApiPlugin", "WinApi\WinApiPlugin.csproj", "{4ED4BD18-DA64-4023-92C5-96EDA37FB9AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelnetPlugin", "TelnetPlugin\TelnetPlugin.csproj", "{C9C55AD2-E222-4759-914C-EC0DEA52D082}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{09F7490D-CFB1-4264-94DC-084FE2E9854D}"
+	ProjectSection(SolutionItems) = preProject
+		cmd\bin\Debug\test.ecmd = cmd\bin\Debug\test.ecmd
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuPlugin", "MenuPlugin\MenuPlugin.csproj", "{20D150EC-106B-4100-928B-D2A21772F1AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FtpPlugin", "FtpPlugin\FtpPlugin.csproj", "{DA3164DE-D76D-4B7A-9EA4-4C54A4E57015}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs27
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = WinApi\\WinApiPlugin.csproj
+		SccProjectTopLevelParentUniqueName1 = cmd.sln
+		SccProjectName1 = WinApi
+		SccLocalPath1 = WinApi
+		SccProjectUniqueName2 = cmd.contracts\\ecmd.contracts.csproj
+		SccProjectName2 = cmd.contracts
+		SccLocalPath2 = cmd.contracts
+		SccProjectUniqueName3 = cmd\\ecmd.csproj
+		SccProjectName3 = cmd
+		SccLocalPath3 = cmd
+		SccProjectUniqueName4 = TelnetPlugin\\TelnetPlugin.csproj
+		SccProjectTopLevelParentUniqueName4 = cmd.sln
+		SccProjectName4 = TelnetPlugin
+		SccLocalPath4 = TelnetPlugin
+		SccProjectUniqueName5 = MenuPlugin\\MenuPlugin.csproj
+		SccProjectTopLevelParentUniqueName5 = cmd.sln
+		SccProjectName5 = MenuPlugin
+		SccLocalPath5 = MenuPlugin
+		SccProjectUniqueName6 = FtpPlugin\\FtpPlugin.csproj
+		SccProjectTopLevelParentUniqueName6 = cmd.sln
+		SccProjectName6 = FtpPlugin
+		SccLocalPath6 = FtpPlugin
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D595073B-BDED-4091-B7F9-297616F90CAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D595073B-BDED-4091-B7F9-297616F90CAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D595073B-BDED-4091-B7F9-297616F90CAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D595073B-BDED-4091-B7F9-297616F90CAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0DF4F99-3BAA-420C-BF2E-E70356D99A53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0DF4F99-3BAA-420C-BF2E-E70356D99A53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0DF4F99-3BAA-420C-BF2E-E70356D99A53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0DF4F99-3BAA-420C-BF2E-E70356D99A53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ED4BD18-DA64-4023-92C5-96EDA37FB9AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ED4BD18-DA64-4023-92C5-96EDA37FB9AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ED4BD18-DA64-4023-92C5-96EDA37FB9AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ED4BD18-DA64-4023-92C5-96EDA37FB9AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9C55AD2-E222-4759-914C-EC0DEA52D082}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9C55AD2-E222-4759-914C-EC0DEA52D082}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9C55AD2-E222-4759-914C-EC0DEA52D082}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9C55AD2-E222-4759-914C-EC0DEA52D082}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20D150EC-106B-4100-928B-D2A21772F1AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20D150EC-106B-4100-928B-D2A21772F1AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20D150EC-106B-4100-928B-D2A21772F1AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20D150EC-106B-4100-928B-D2A21772F1AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA3164DE-D76D-4B7A-9EA4-4C54A4E57015}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA3164DE-D76D-4B7A-9EA4-4C54A4E57015}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA3164DE-D76D-4B7A-9EA4-4C54A4E57015}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA3164DE-D76D-4B7A-9EA4-4C54A4E57015}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4ED4BD18-DA64-4023-92C5-96EDA37FB9AF} = {132A0D0A-8188-4AF0-9EC2-3BD73B519647}
+		{C9C55AD2-E222-4759-914C-EC0DEA52D082} = {132A0D0A-8188-4AF0-9EC2-3BD73B519647}
+		{20D150EC-106B-4100-928B-D2A21772F1AF} = {132A0D0A-8188-4AF0-9EC2-3BD73B519647}
+		{DA3164DE-D76D-4B7A-9EA4-4C54A4E57015} = {132A0D0A-8188-4AF0-9EC2-3BD73B519647}
+	EndGlobalSection
+EndGlobal

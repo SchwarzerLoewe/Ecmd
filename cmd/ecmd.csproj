@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D595073B-BDED-4091-B7F9-297616F90CAA}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>cmd</RootNamespace>
+    <AssemblyName>ecmd</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>cmd.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CmdPlugInManager.cs" />
+    <Compile Include="Commands\AptGetCommand.cs" />
+    <Compile Include="Commands\PrintCommand.cs" />
+    <Compile Include="Commands\EchoCommand.cs" />
+    <Compile Include="Internals\Scripting\Commands\SetCommand.cs" />
+    <Compile Include="Internals\Scripting\Commands\ColorCommand.cs" />
+    <Compile Include="Internals\Scripting\Commands\EvalCommand.cs" />
+    <Compile Include="Internals\Scripting\Commands\TitleCommand.cs" />
+    <Compile Include="Internals\Scripting\Commands\SleepCommand.cs" />
+    <Compile Include="Internals\Scripting\Commands\PauseCommand.cs" />
+    <Compile Include="Internals\Scripting\Engine\BuildInTypes\Base\EcBuiltInType.cs" />
+    <Compile Include="Internals\Scripting\Engine\BuildInTypes\EcBool.cs" />
+    <Compile Include="Internals\Scripting\Engine\BuildInTypes\EcByte.cs" />
+    <Compile Include="Internals\Scripting\Engine\BuildInTypes\EcObject.cs" />
+    <Compile Include="Internals\Scripting\Engine\BuildInTypes\EcString.cs" />
+    <Compile Include="Internals\Scripting\Engine\BuildInTypes\Null.cs" />
+    <Compile Include="Internals\Scripting\Engine\BuildInTypes\Number.cs" />
+    <Compile Include="Internals\Scripting\Engine\BuildInTypes\RegExp.cs" />
+    <Compile Include="Internals\Scripting\Engine\CallVisitor.cs" />
+    <Compile Include="Internals\Scripting\Engine\Engine.cs" />
+    <Compile Include="Internals\Scripting\Engine\EnumerationExtensions.cs" />
+    <Compile Include="Internals\Scripting\Engine\GrammarBuilder.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\AST\Expression.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\AST\Grammar.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\AST\IAst.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\AST\MultilineStatement.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\AST\RegexPattern.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\AST\RegexPatterns.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\AST\Statement.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\AST\Statements\AttributeStmt.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\AST\Statements\CallStmt.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\AST\Statements\CommentStmt.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\AST\Statements\DecSetStmt.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\AST\Statements\DecStmt.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\AST\Statements\DeIncreaseStmt.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\AST\Statements\DelStmt.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\AST\Statements\ForEachStmt.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\AST\Statements\ForStmt.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\AST\Statements\IfStmt.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\AST\Statements\ImportStmt.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\AST\Statements\ModeStmt.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\AST\Statements\ObjCallStmt.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\AST\Statements\StatmentVarHandler.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\AST\Statements\SwitchStmt.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\AST\Statements\ThrowStmt.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\AST\Statements\TryCatchStmt.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\AST\Statements\WhileStmt.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\AttributeContainer.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\Attributes\AttributeManager.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\Attributes\Base\Attribute.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\Binary\IModule.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\Binary\Modules\FilesystemModule.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\Binary\Modules\ResourcesModule.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\Binary\Reader.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\Binary\Writer.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\Brainfuck.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\CodeBlock.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\DelegateBuilder.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\EcCustomClass.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\EcFileFormat.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\MathParser.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\MathsExspretionHandler.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\Method.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\Operator.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\OperatorCollection.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\Operators.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\Parser.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\PrimitivesManager.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\Primitives\Base\Primitive.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\Primitives\EcArray.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\Primitives\EcBool.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\Primitives\EcExpression.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\Primitives\EcLambda.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\Primitives\EcNumber.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\Primitives\EcObject.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\Primitives\EcObjectCallStmt.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\Primitives\EcRegexp.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\Primitives\EcString.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\Primitives\Fuck.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\Reference.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\Tables\ErrorTable.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\Tables\FunctionTable.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\Tables\SymbolTable.cs" />
+    <Compile Include="Internals\Scripting\Engine\Internal\ThrowObject.cs" />
+    <Compile Include="Internals\Scripting\Engine\IVisitableNode.cs" />
+    <Compile Include="Internals\Scripting\Engine\IVisitor.cs" />
+    <Compile Include="Internals\Scripting\Engine\StaticMembersDynamicWrapper.cs" />
+    <Compile Include="Internals\Scripting\Extensions.cs" />
+    <Compile Include="Internals\Scripting\Program.cs" />
+    <Compile Include="Repository.cs" />
+    <Compile Include="RepositoryDatabase.cs" />
+    <Compile Include="Commands\ArchiveCommands\ZipCommand.cs" />
+    <Compile Include="Commands\RunCommand.cs" />
+    <Compile Include="Commands\ClearCommand.cs" />
+    <Compile Include="Commands\CdCommand.cs" />
+    <Compile Include="Commands\CdUpperCommand.cs" />
+    <Compile Include="Commands\DirCommand.cs" />
+    <Compile Include="Commands\MkDirCommand.cs" />
+    <Compile Include="Commands\WGetCommand.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\BZip2\BZip2.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\BZip2\BZip2Constants.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\BZip2\BZip2Exception.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\BZip2\BZip2InputStream.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\BZip2\BZip2OutputStream.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Checksums\Adler32.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Checksums\CRC32.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Checksums\IChecksum.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Checksums\StrangeCRC.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Core\FileSystemScanner.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Core\INameTransform.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Core\IScanFilter.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Core\NameFilter.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Core\PathFilter.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Core\StreamUtils.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Core\WindowsPathUtils.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Encryption\PkzipClassic.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Encryption\ZipAESStream.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Encryption\ZipAESTransform.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\GZip\GZIPConstants.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\GZip\GZipException.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\GZip\GzipInputStream.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\GZip\GzipOutputStream.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Lzw\LzwConstants.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Lzw\LzwException.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Lzw\LzwInputStream.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\SharpZipBaseException.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Tar\InvalidHeaderException.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Tar\TarArchive.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Tar\TarBuffer.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Tar\TarEntry.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Tar\TarException.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Tar\TarHeader.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Tar\TarInputStream.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Tar\TarOutputStream.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Zip\Compression\Deflater.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Zip\Compression\DeflaterConstants.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Zip\Compression\DeflaterEngine.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Zip\Compression\DeflaterHuffman.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Zip\Compression\DeflaterPending.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Zip\Compression\Inflater.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Zip\Compression\InflaterDynHeader.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Zip\Compression\InflaterHuffmanTree.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Zip\Compression\PendingBuffer.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Zip\Compression\Streams\DeflaterOutputStream.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Zip\Compression\Streams\InflaterInputStream.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Zip\Compression\Streams\OutputWindow.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Zip\Compression\Streams\StreamManipulator.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Zip\FastZip.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Zip\IEntryFactory.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Zip\WindowsNameTransform.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Zip\ZipConstants.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Zip\ZipEntry.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Zip\ZipEntryFactory.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Zip\ZipException.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Zip\ZipExtraData.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Zip\ZipFile.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Zip\ZipHelperStream.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Zip\ZipInputStream.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Zip\ZipNameTransform.cs" />
+    <Compile Include="Commands\Internals\SharpZipLib\Zip\ZipOutputStream.cs" />
+    <Compile Include="Commands\CopyCommand.cs" />
+    <Compile Include="Commands\ArchiveCommands\UnzipCommand.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ScriptInterpreter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="cmd.ico" />
+    <Content Include="Internals\Scripting\Engine\Internal\ExpressionGrammer.txt" />
+    <Content Include="Internals\Scripting\Engine\Internal\Grammar.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\cmd.contracts\ecmd.contracts.csproj">
+      <Project>{F0DF4F99-3BAA-420C-BF2E-E70356D99A53}</Project>
+      <Name>ecmd.contracts</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

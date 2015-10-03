@@ -1,0 +1,40 @@
+:: variables
+set title "hello world test"
+
+title %title%
+::color 1 7
+
+:: test eval
+eval "echo blub"
+
+:: init fileystem
+mkdir hello & cd hello & mkdir world & cd world
+echo "{0} and {1} created" hello world
+
+:: download file
+echo "get file" 
+wget http://www.fledermauskunde.de/thebat/bat_ko06.gif
+
+echo "downloaded. press ENTER to run it ({0})" %title%
+
+if %input% = "Enter"
+	echo "true"
+end if
+
+pause
+
+if %input% == "hello world"
+	echo "agree"
+end if
+
+:: run file
+run bat_ko06.gif
+
+:: echo "pleasee input anything: "
+:: pause
+:: echo %input%
+
+:: wait user input to exit
+echo "Enter a key to exit!"
+
+pause

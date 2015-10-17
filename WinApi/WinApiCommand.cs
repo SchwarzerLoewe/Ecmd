@@ -1,6 +1,6 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
 using cmd.contracts;
+using cmd.contracts.Help;
 
 namespace WinApiPlugin
 {
@@ -9,6 +9,19 @@ namespace WinApiPlugin
         public override bool Accept(Command command)
         {
             return command.Name == "winapi";
+        }
+
+        public override HelpBuilder Help
+        {
+            get
+            {
+                var b = new HelpBuilder();
+
+                b.Add("winapi", "Special WinApi functions",
+                    "winapi taskbar --show\rwinapi taskbar --hide");
+
+                return b;
+            }
         }
 
         public override bool Interact(ref DirectoryInfo path, Command command)

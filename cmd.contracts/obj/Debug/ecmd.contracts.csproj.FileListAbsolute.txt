@@ -1,5 +1,5 @@
 C:\Users\filmee24\Documents\GitHub\Ecmd\cmd.contracts\bin\Debug\ecmd.contracts.dll
 C:\Users\filmee24\Documents\GitHub\Ecmd\cmd.contracts\bin\Debug\ecmd.contracts.pdb
-C:\Users\filmee24\Documents\GitHub\Ecmd\cmd.contracts\obj\Debug\ecmd.contracts.csprojResolveAssemblyReference.cache
 C:\Users\filmee24\Documents\GitHub\Ecmd\cmd.contracts\obj\Debug\ecmd.contracts.dll
 C:\Users\filmee24\Documents\GitHub\Ecmd\cmd.contracts\obj\Debug\ecmd.contracts.pdb
+C:\Users\filmee24\Documents\GitHub\Ecmd\cmd.contracts\obj\Debug\ecmd.contracts.csprojResolveAssemblyReference.cache

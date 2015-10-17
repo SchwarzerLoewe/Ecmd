@@ -7,7 +7,6 @@ using cmd.Commands;
 using Cmd.Internals;
 using cmd.Internals.Scripting;
 using cmd.Modules;
-using Cmd.Modules.ArchiveCommands;
 using cmd.Properties;
 using cmd.contracts;
 
@@ -15,7 +14,7 @@ namespace cmd
 {
     public static class Program
     {
-        private static CmdPlugInManager _plugInManager;
+        public static CmdPlugInManager _plugInManager;
         internal static List<ICommand> commands = new List<ICommand>();
 
         static void Main(string[] args)
@@ -27,8 +26,6 @@ namespace cmd
             commands.Add(new CdUpperCommand());
             commands.Add(new ClearCommand());
             commands.Add(new RunCommand());
-            commands.Add(new UnzipCommand());
-            commands.Add(new ZipCommand());
             commands.Add(new CopyCommand());
             commands.Add(new MkDirCommand());
             commands.Add(new WGetCommand());

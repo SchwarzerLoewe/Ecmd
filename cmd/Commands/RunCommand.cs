@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.IO;
 using cmd.contracts;
+using cmd.contracts.Help;
 
 namespace cmd.Modules
 {
@@ -10,6 +11,19 @@ namespace cmd.Modules
         public override bool Accept(Command command)
         {
             return command.Name == "run";
+        }
+
+        public override HelpBuilder Help
+        {
+            get
+            {
+                var b = new HelpBuilder();
+
+                b.Add("run", "Run an external process",
+                    "run <filename>");
+
+                return b;
+            }
         }
 
         public override bool Interact(ref DirectoryInfo di, Command c)

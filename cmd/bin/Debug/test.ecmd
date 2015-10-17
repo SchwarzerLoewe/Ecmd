@@ -30,7 +30,7 @@ end if
 :: run file
 run bat_ko06.gif
 
-:: echo "pleasee input anything: "
+:: echo "please input anything: "
 :: pause
 :: echo %input%
 

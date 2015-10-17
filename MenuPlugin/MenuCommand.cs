@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using cmd.contracts;
+using cmd.contracts.Help;
 
 namespace MenuPlugin
 {
@@ -16,6 +17,19 @@ namespace MenuPlugin
 			m.Show();
 
 			return true;
+		}
+
+		public override HelpBuilder Help
+		{
+			get
+			{
+				var b = new HelpBuilder();
+
+				b.Add("menu", "A Menu Sample",
+					"menu");
+
+				return b;
+			}
 		}
 
 		public override bool Accept(Command command)

@@ -2,14 +2,28 @@
 using System.IO;
 using ICSharpCode.SharpZipLib.Zip;
 using cmd.contracts;
+using cmd.contracts.Help;
 
-namespace Cmd.Modules.ArchiveCommands
+namespace ArchivePlugin
 {
     public class UnzipCommand : ICommand
     {
         public override bool Accept(Command command)
         {
             return command.Name == "unzip";
+        }
+
+        public override HelpBuilder Help
+        {
+            get
+            {
+                var b = new HelpBuilder();
+
+                b.Add("unzip", "unzip an .zip file",
+                    "unzip <filename>");
+
+                return b;
+            }
         }
 
         public override bool Interact(ref DirectoryInfo path, Command c)

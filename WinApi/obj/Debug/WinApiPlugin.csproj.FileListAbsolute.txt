@@ -1,0 +1,7 @@
+C:\Users\filmee24\Documents\GitHub\Ecmd\WinApi\bin\Debug\WinApiPlugin.dll
+C:\Users\filmee24\Documents\GitHub\Ecmd\WinApi\bin\Debug\WinApiPlugin.pdb
+C:\Users\filmee24\Documents\GitHub\Ecmd\WinApi\bin\Debug\ecmd.contracts.dll
+C:\Users\filmee24\Documents\GitHub\Ecmd\WinApi\bin\Debug\ecmd.contracts.pdb
+C:\Users\filmee24\Documents\GitHub\Ecmd\WinApi\obj\Debug\WinApiPlugin.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\Documents\GitHub\Ecmd\WinApi\obj\Debug\WinApiPlugin.dll
+C:\Users\filmee24\Documents\GitHub\Ecmd\WinApi\obj\Debug\WinApiPlugin.pdb

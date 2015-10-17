@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ecmd", "cmd\ecmd.csproj", "{D595073B-BDED-4091-B7F9-297616F90CAA}"
 EndProject
@@ -22,35 +22,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuPlugin", "MenuPlugin\Me
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FtpPlugin", "FtpPlugin\FtpPlugin.csproj", "{DA3164DE-D76D-4B7A-9EA4-4C54A4E57015}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchivePlugin", "ArchivePlugin\ArchivePlugin.csproj", "{EF207B19-5549-49B1-94A7-AF85D737406C}"
+EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 7
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs27
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = WinApi\\WinApiPlugin.csproj
-		SccProjectTopLevelParentUniqueName1 = cmd.sln
-		SccProjectName1 = WinApi
-		SccLocalPath1 = WinApi
-		SccProjectUniqueName2 = cmd.contracts\\ecmd.contracts.csproj
-		SccProjectName2 = cmd.contracts
-		SccLocalPath2 = cmd.contracts
-		SccProjectUniqueName3 = cmd\\ecmd.csproj
-		SccProjectName3 = cmd
-		SccLocalPath3 = cmd
-		SccProjectUniqueName4 = TelnetPlugin\\TelnetPlugin.csproj
-		SccProjectTopLevelParentUniqueName4 = cmd.sln
-		SccProjectName4 = TelnetPlugin
-		SccLocalPath4 = TelnetPlugin
-		SccProjectUniqueName5 = MenuPlugin\\MenuPlugin.csproj
-		SccProjectTopLevelParentUniqueName5 = cmd.sln
-		SccProjectName5 = MenuPlugin
-		SccLocalPath5 = MenuPlugin
-		SccProjectUniqueName6 = FtpPlugin\\FtpPlugin.csproj
-		SccProjectTopLevelParentUniqueName6 = cmd.sln
-		SccProjectName6 = FtpPlugin
-		SccLocalPath6 = FtpPlugin
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -80,6 +54,10 @@ Global
 		{DA3164DE-D76D-4B7A-9EA4-4C54A4E57015}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA3164DE-D76D-4B7A-9EA4-4C54A4E57015}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA3164DE-D76D-4B7A-9EA4-4C54A4E57015}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF207B19-5549-49B1-94A7-AF85D737406C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF207B19-5549-49B1-94A7-AF85D737406C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF207B19-5549-49B1-94A7-AF85D737406C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF207B19-5549-49B1-94A7-AF85D737406C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -89,5 +67,6 @@ Global
 		{C9C55AD2-E222-4759-914C-EC0DEA52D082} = {132A0D0A-8188-4AF0-9EC2-3BD73B519647}
 		{20D150EC-106B-4100-928B-D2A21772F1AF} = {132A0D0A-8188-4AF0-9EC2-3BD73B519647}
 		{DA3164DE-D76D-4B7A-9EA4-4C54A4E57015} = {132A0D0A-8188-4AF0-9EC2-3BD73B519647}
+		{EF207B19-5549-49B1-94A7-AF85D737406C} = {132A0D0A-8188-4AF0-9EC2-3BD73B519647}
 	EndGlobalSection
 EndGlobal

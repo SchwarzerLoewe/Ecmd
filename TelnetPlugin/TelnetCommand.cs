@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using cmd.contracts;
+using cmd.contracts.Help;
 
 namespace TelnetPlugin
 {
@@ -8,6 +9,20 @@ namespace TelnetPlugin
     {
         TelnetPlugin.Internal.TelnetSocket socket = new TelnetPlugin.Internal.TelnetSocket();
         System.Text.StringBuilder response = new System.Text.StringBuilder();
+
+        public override HelpBuilder Help
+        {
+            get
+            {
+                var b = new HelpBuilder();
+
+                b.Add("telnet", "Telnet Client",
+                    "telnet connect <host>\rtelnet disconnect\rtelnet write <text>\rtelnet writeline <text>" +
+                    "\rapt-get add-repository <uri>\rapt-get remove-repository <uri>");
+
+                return b;
+            }
+        }
 
         public TelnetCommand()
         {

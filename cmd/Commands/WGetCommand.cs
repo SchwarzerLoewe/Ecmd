@@ -2,6 +2,7 @@
 using System.IO;
 using System.Net;
 using cmd.contracts;
+using cmd.contracts.Help;
 
 namespace cmd.Modules
 {
@@ -10,6 +11,19 @@ namespace cmd.Modules
         public override bool Accept(Command command)
         {
             return command.Name == "wget";
+        }
+
+        public override HelpBuilder Help
+        {
+            get
+            {
+                var b = new HelpBuilder();
+
+                b.Add("wget", "Download a File",
+                    "wget <uri>");
+
+                return b;
+            }
         }
 
         public override bool Interact(ref DirectoryInfo path, Command c)

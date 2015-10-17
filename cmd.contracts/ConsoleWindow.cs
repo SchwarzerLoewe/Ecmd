@@ -73,7 +73,9 @@ namespace cmd.contracts
             // Stops Receving Keys Once Enter is Pressed
             while (key.Key != ConsoleKey.Enter);
 
-            return pass;
+            Console.SetCursorPosition(0, Console.CursorTop);
+
+            return pass.Replace("\r", "");
         }
 
         const int SW_HIDE = 0;

@@ -1,0 +1,7 @@
+C:\Users\filmee24\Documents\GitHub\Ecmd\TelnetPlugin\bin\Debug\TelnetPlugin.dll
+C:\Users\filmee24\Documents\GitHub\Ecmd\TelnetPlugin\bin\Debug\TelnetPlugin.pdb
+C:\Users\filmee24\Documents\GitHub\Ecmd\TelnetPlugin\bin\Debug\ecmd.contracts.dll
+C:\Users\filmee24\Documents\GitHub\Ecmd\TelnetPlugin\bin\Debug\ecmd.contracts.pdb
+C:\Users\filmee24\Documents\GitHub\Ecmd\TelnetPlugin\obj\Debug\TelnetPlugin.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\Documents\GitHub\Ecmd\TelnetPlugin\obj\Debug\TelnetPlugin.dll
+C:\Users\filmee24\Documents\GitHub\Ecmd\TelnetPlugin\obj\Debug\TelnetPlugin.pdb

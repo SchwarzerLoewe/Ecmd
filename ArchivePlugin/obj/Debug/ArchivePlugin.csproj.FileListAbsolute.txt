@@ -1,0 +1,7 @@
+C:\Users\filmee24\Documents\GitHub\Ecmd\ArchivePlugin\bin\Debug\ArchivePlugin.dll
+C:\Users\filmee24\Documents\GitHub\Ecmd\ArchivePlugin\bin\Debug\ArchivePlugin.pdb
+C:\Users\filmee24\Documents\GitHub\Ecmd\ArchivePlugin\bin\Debug\ecmd.contracts.dll
+C:\Users\filmee24\Documents\GitHub\Ecmd\ArchivePlugin\bin\Debug\ecmd.contracts.pdb
+C:\Users\filmee24\Documents\GitHub\Ecmd\ArchivePlugin\obj\Debug\ArchivePlugin.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\Documents\GitHub\Ecmd\ArchivePlugin\obj\Debug\ArchivePlugin.dll
+C:\Users\filmee24\Documents\GitHub\Ecmd\ArchivePlugin\obj\Debug\ArchivePlugin.pdb

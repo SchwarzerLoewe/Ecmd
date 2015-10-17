@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>cmd</RootNamespace>
     <AssemblyName>ecmd</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
     <SccProjectName>SAK</SccProjectName>
@@ -57,6 +57,7 @@
   <ItemGroup>
     <Compile Include="CmdPlugInManager.cs" />
     <Compile Include="Commands\AptGetCommand.cs" />
+    <Compile Include="Commands\PluginCommand.cs" />
     <Compile Include="Commands\HelpCommand.cs" />
     <Compile Include="Commands\PrintCommand.cs" />
     <Compile Include="Commands\EchoCommand.cs" />
@@ -147,7 +148,6 @@
     <Compile Include="Internals\Scripting\Program.cs" />
     <Compile Include="Repository.cs" />
     <Compile Include="RepositoryDatabase.cs" />
-    <Compile Include="Commands\ArchiveCommands\ZipCommand.cs" />
     <Compile Include="Commands\RunCommand.cs" />
     <Compile Include="Commands\ClearCommand.cs" />
     <Compile Include="Commands\CdCommand.cs" />
@@ -155,69 +155,7 @@
     <Compile Include="Commands\DirCommand.cs" />
     <Compile Include="Commands\MkDirCommand.cs" />
     <Compile Include="Commands\WGetCommand.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\BZip2\BZip2.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\BZip2\BZip2Constants.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\BZip2\BZip2Exception.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\BZip2\BZip2InputStream.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\BZip2\BZip2OutputStream.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Checksums\Adler32.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Checksums\CRC32.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Checksums\IChecksum.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Checksums\StrangeCRC.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Core\FileSystemScanner.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Core\INameTransform.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Core\IScanFilter.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Core\NameFilter.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Core\PathFilter.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Core\StreamUtils.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Core\WindowsPathUtils.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Encryption\PkzipClassic.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Encryption\ZipAESStream.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Encryption\ZipAESTransform.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\GZip\GZIPConstants.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\GZip\GZipException.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\GZip\GzipInputStream.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\GZip\GzipOutputStream.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Lzw\LzwConstants.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Lzw\LzwException.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Lzw\LzwInputStream.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\SharpZipBaseException.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Tar\InvalidHeaderException.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Tar\TarArchive.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Tar\TarBuffer.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Tar\TarEntry.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Tar\TarException.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Tar\TarHeader.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Tar\TarInputStream.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Tar\TarOutputStream.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Zip\Compression\Deflater.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Zip\Compression\DeflaterConstants.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Zip\Compression\DeflaterEngine.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Zip\Compression\DeflaterHuffman.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Zip\Compression\DeflaterPending.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Zip\Compression\Inflater.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Zip\Compression\InflaterDynHeader.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Zip\Compression\InflaterHuffmanTree.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Zip\Compression\PendingBuffer.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Zip\Compression\Streams\DeflaterOutputStream.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Zip\Compression\Streams\InflaterInputStream.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Zip\Compression\Streams\OutputWindow.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Zip\Compression\Streams\StreamManipulator.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Zip\FastZip.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Zip\IEntryFactory.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Zip\WindowsNameTransform.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Zip\ZipConstants.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Zip\ZipEntry.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Zip\ZipEntryFactory.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Zip\ZipException.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Zip\ZipExtraData.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Zip\ZipFile.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Zip\ZipHelperStream.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Zip\ZipInputStream.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Zip\ZipNameTransform.cs" />
-    <Compile Include="Commands\Internals\SharpZipLib\Zip\ZipOutputStream.cs" />
     <Compile Include="Commands\CopyCommand.cs" />
-    <Compile Include="Commands\ArchiveCommands\UnzipCommand.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">

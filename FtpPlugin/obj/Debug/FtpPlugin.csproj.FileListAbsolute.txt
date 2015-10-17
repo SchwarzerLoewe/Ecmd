@@ -1,0 +1,7 @@
+C:\Users\filmee24\Documents\GitHub\Ecmd\FtpPlugin\bin\Debug\FtpPlugin.dll
+C:\Users\filmee24\Documents\GitHub\Ecmd\FtpPlugin\bin\Debug\FtpPlugin.pdb
+C:\Users\filmee24\Documents\GitHub\Ecmd\FtpPlugin\bin\Debug\ecmd.contracts.dll
+C:\Users\filmee24\Documents\GitHub\Ecmd\FtpPlugin\bin\Debug\ecmd.contracts.pdb
+C:\Users\filmee24\Documents\GitHub\Ecmd\FtpPlugin\obj\Debug\FtpPlugin.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\Documents\GitHub\Ecmd\FtpPlugin\obj\Debug\FtpPlugin.dll
+C:\Users\filmee24\Documents\GitHub\Ecmd\FtpPlugin\obj\Debug\FtpPlugin.pdb

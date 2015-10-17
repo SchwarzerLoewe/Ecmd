@@ -2,14 +2,28 @@
 using System.IO;
 using ICSharpCode.SharpZipLib.Zip;
 using cmd.contracts;
+using cmd.contracts.Help;
 
-namespace Cmd.Modules.ArchiveCommands
+namespace ArchivePlugin
 {
     public class ZipCommand : ICommand
     {
         public override bool Accept(Command command)
         {
             return command.Name == "zip";
+        }
+
+        public override HelpBuilder Help
+        {
+            get
+            {
+                var b = new HelpBuilder();
+
+                b.Add("zip", "Zip a Folder",
+                    "zip <foldername>");
+
+                return b;
+            }
         }
 
         public override bool Interact(ref DirectoryInfo path, Command c)

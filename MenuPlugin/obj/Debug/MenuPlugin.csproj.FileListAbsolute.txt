@@ -1,0 +1,7 @@
+C:\Users\filmee24\Documents\GitHub\Ecmd\MenuPlugin\bin\Debug\MenuPlugin.dll
+C:\Users\filmee24\Documents\GitHub\Ecmd\MenuPlugin\bin\Debug\MenuPlugin.pdb
+C:\Users\filmee24\Documents\GitHub\Ecmd\MenuPlugin\bin\Debug\ecmd.contracts.dll
+C:\Users\filmee24\Documents\GitHub\Ecmd\MenuPlugin\bin\Debug\ecmd.contracts.pdb
+C:\Users\filmee24\Documents\GitHub\Ecmd\MenuPlugin\obj\Debug\MenuPlugin.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\Documents\GitHub\Ecmd\MenuPlugin\obj\Debug\MenuPlugin.dll
+C:\Users\filmee24\Documents\GitHub\Ecmd\MenuPlugin\obj\Debug\MenuPlugin.pdb
